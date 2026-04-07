@@ -1,0 +1,23 @@
+{
+  "name": "claude-mcp-agent",
+  "version": "0.1.0",
+  "description": "Claude-powered executive assistant agent with multi-tool MCP integration",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "agent": "tsx src/runAgent.ts",
+    "mcp": "tsx src/mcpServer.ts",
+    "lint": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.27.3",
+    "@modelcontextprotocol/sdk": "^0.5.0",
+    "zod": "^3.23.8",
+    "zod-to-json-schema": "^3.23.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.7",
+    "tsx": "^4.7.0",
+    "typescript": "^5.4.0"
+  }
+}
